@@ -1,0 +1,9 @@
+name: run-hello-world
+on:
+  push:
+    paths: "././Ex2/src/main.cpp"
+jobs:
+  steps:
+    - uses: actions/checkout@v2
+    - run: g++ main.cpp
+    - run: ./a.out
